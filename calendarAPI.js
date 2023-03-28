@@ -172,13 +172,13 @@ const sleep = ms => new Promise(res => setTimeout(res, ms))
            //{'email': `${provEmail}`}
           {'email': `arao@animosanopsychiatry.com`}
         ],
-        'id': `${eventId}`,
+        //'id': `${eventId}`,
         'sendUpdates': 'none', //all, externalOnly, none
         
         'reminders': {
           'useDefault': false,
           'overrides': [
-            {'method': 'email', 'minutes': 24 * 60},
+            //{'method': 'email', 'minutes': 24 * 60},
             {'method': 'popup', 'minutes': 10},
           ],
         },
