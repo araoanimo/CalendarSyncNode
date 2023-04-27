@@ -169,8 +169,8 @@ const sleep = ms => new Promise(res => setTimeout(res, ms))
           
         ],
         'attendees': [
-           //{'email': `${provEmail}`}
-          {'email': `arao@animosanopsychiatry.com`}
+           {'email': `${provEmail}`}
+          //{'email': `arao@animosanopsychiatry.com`}
         ],
         //'id': `${eventId}`,
         'sendUpdates': 'none', //all, externalOnly, none
@@ -179,7 +179,7 @@ const sleep = ms => new Promise(res => setTimeout(res, ms))
           'useDefault': false,
           'overrides': [
             //{'method': 'email', 'minutes': 24 * 60},
-            {'method': 'popup', 'minutes': 10},
+            //{'method': 'popup', 'minutes': 10},
           ],
         },
       };

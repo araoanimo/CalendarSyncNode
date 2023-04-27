@@ -29,7 +29,7 @@ sql.connect(config, err => {
         const today = todayDate.getFullYear() + '-' + (todayDate.getMonth() + 1) + '-' + todayDate.getDate() + ' 7:00';
         const endDate = new Date(todayDate);
         endDate.setDate(endDate.getDate() + 7);
-        const end = endDate.getFullYear() + '-' + (endDate.getMonth() + 1) + '-' + endDate.getDate() + ' 20:00';
+        const end = endDate.getFullYear() + '-' + (endDate.getMonth() + 1) + '-' + endDate.getDate() + ' 21:00';
     
 
         // Query to the database and get the records
@@ -41,7 +41,7 @@ sql.connect(config, err => {
                 let recordset = records.recordset;
                 authorize()
                 .then((auth) => {
-                    //createEvents(auth, recordset);
+                    createEvents(auth, recordset);
                     console.log('recordset: done');
                 }).catch(console.error);
             });
